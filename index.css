@@ -1,0 +1,34 @@
+.container {
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  border: 1px solid black;
+  grid-template-areas:
+    "two one"
+    "two three"
+    ". four";
+}
+
+.child {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
